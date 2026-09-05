@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ahmed & Huda Engagement Invitation">
@@ -9,14 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome For WhatsApp Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- MAIN CONTAINER WITH VINTAGE BORDER -->
   <div class="page-wrapper">
 
-    <!-- FLOATING INVITATION CARD (HERO) -->
+    <!-- HERO SECTION -->
     <header class="hero-card-section">
       <div class="invitation-card">
         <div class="corner-ornament top-left"></div>
@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <!-- ASYMMETRIC DETAILS & GALLERY SECTION -->
+    <!-- DETAILS & GALLERY SECTION -->
     <section id="details" class="asymmetric-section">
       <div class="section-title">
         <span>MEMORABLE MOMENTS & LOCATION</span>
@@ -56,7 +56,6 @@
       </div>
 
       <div class="asymmetric-grid">
-        <!-- Info Box 1 -->
         <div class="grid-card info-card">
           <div class="card-head">
             <span class="badge">WHEN</span>
@@ -66,40 +65,34 @@
           <p class="card-sub-text">Ceremony starts sharply at <span id="eventTimeText">8:00 PM</span></p>
         </div>
 
-        <!-- Gallery Photo 1 -->
         <div class="grid-card image-card">
           <img src="cartoon1.png" alt="Ahmed and Huda Artwork 1">
         </div>
 
-        <!-- Gallery Photo 2 -->
         <div class="grid-card image-card">
           <img src="cartoon2.png" alt="Ahmed and Huda Artwork 2">
         </div>
 
-        <!-- Info Box 2 (Location) -->
         <div class="grid-card info-card gold-border">
           <div class="card-head">
             <span class="badge">WHERE</span>
             <h3>Panorama October</h3>
           </div>
           <p class="card-sub-text">Main Ballroom, 6th of October City</p>
-          <a class="map-link" href="https://www.google.com/maps?ftid=0x14583fd51c26bb7b:0x45f4aa75d3623850&entry=gps&lucs=,94278710,94275308,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjI5LjEuNzgyOTg1OTc1MBgAIP___________wEqbCw5NDI3ODcxMCw5NDI3NTMwOCw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw5NDIzMTE4OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDI4MjEzNCw5NDIwMzAxOSw0NzA8N0ICRUc%3D&skid=329bdc74-a2ac-4cff-8a31-fc820d18ae37&g_st=ipc" target="_blank" rel="noopener">
+          <a class="map-link" href="https://www.google.com/maps?ftid=0x14583fd51c26bb7b:0x45f4aa75d3623850&entry=gps&lucs=,94278710,94275308,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjI5LjEuNzgyOTg1OTc1MBgAIP___________wEqbCw5NDI3ODcxMCw5NDI3NTMwOCw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw5NDIzMTE4OCw4NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDI4MjEzNCw5NDIwMzAxOSw0NzA4NDMwNEICRUc%3D&skid=329bdc74-a2ac-4cff-8a31-fc820d18ae37&g_st=ipc" target="_blank" rel="noopener">
             View Location Map →
           </a>
         </div>
 
-        <!-- Gallery Photo 3 -->
         <div class="grid-card image-card full-span">
           <img src="cartoon3.png" alt="Ahmed and Huda Artwork 3">
         </div>
       </div>
     </section>
 
-    <!-- DUAL SPLIT FORMS SECTION (RSVP & WISHES) -->
+    <!-- DUAL FORMS SECTION -->
     <section id="rsvp" class="forms-dual-section">
       <div class="dual-container">
-        
-        <!-- Form 1: RSVP -->
         <div class="form-wrapper">
           <div class="form-header">
             <h3>Attendance RSVP</h3>
@@ -127,7 +120,6 @@
           </form>
         </div>
 
-        <!-- Form 2: Wishes -->
         <div class="form-wrapper border-left">
           <div class="form-header">
             <h3>Warm Wishes</h3>
@@ -146,17 +138,25 @@
             <p id="wishStatusMessage" class="form-status"></p>
           </form>
         </div>
-
       </div>
     </section>
 
-    <!-- ELEGANT FOOTER -->
+    <!-- FOOTER -->
     <footer class="site-footer">
       <p class="footer-names">Ahmed &amp; Huda</p>
       <p class="footer-date">SEPTEMBER 30, 2026 • PANORAMA OCTOBER</p>
     </footer>
 
   </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/201500816542?text=مرحباً،%20أود%20الاستفسار%20عن%20تصميم%20دعوة%20موقع%20مشابهة" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Order via WhatsApp">
+    <i class="fa-brands => fa-whatsapp whatsapp-icon"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>
