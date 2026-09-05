@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahmed & Huda Engagement Invitation">
+  <title>Ahmed & Huda | Engagement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">THE ENGAGEMENT OF</p>
+        <h1>Ahmed <span>&amp;</span> Huda</h1>
+        <p class="hero-date">30 • 09 • 2026</p>
+        <a class="btn btn-gold" href="#details">Discover the Invitation</a>
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="intro section">
+      <p class="eyebrow">A BEAUTIFUL BEGINNING</p>
+      <h2>Two Hearts, One Golden Story</h2>
+      <p class="intro-text">
+        With immense joy and love, we invite you to honor us with your presence as we celebrate our engagement night.
+      </p>
+      <div class="ornament">✧</div>
+    </section>
+
+    <!-- COUNTDOWN SECTION -->
+    <section class="countdown-section section">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2>Counting Down To The Night</h2>
+      <div id="countdown" class="countdown">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+      <p class="time-note">Event time: <span id="eventTimeText">8:00 PM</span></p>
+    </section>
+
+    <!-- DETAILS SECTION -->
+    <section id="details" class="details section">
+      <p class="eyebrow">THE CELEBRATION</p>
+      <h2>Event Details</h2>
+      <div class="details-grid">
+        <div class="detail-card">
+          <span class="icon">💍</span>
+          <h3>Date</h3>
+          <p>Wednesday<br><b>30 September 2026</b></p>
+        </div>
+        <div class="detail-card">
+          <span class="icon">🏰</span>
+          <h3>Venue</h3>
+          <p><b>Panorama October</b><br>Main Ballroom</p>
+        </div>
+        <div class="detail-card">
+          <span class="icon">⏳</span>
+          <h3>Time</h3>
+          <p id="timeCard">8:00 PM</p>
+        </div>
+      </div>
+      <a class="btn btn-gold" href="https://www.google.com/maps?ftid=0x14583fd51c26bb7b:0x45f4aa75d3623850&entry=gps&lucs=,94278710,94275308,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjI5LjEuNzgyOTg1OTc1MBgAIP___________wEqbCw5NDI3ODcxMCw5NDI3NTMwOCw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw5NDIzMTE4OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDI4MjEzNCw5NDIwMzAxOSw0NzA4NDMwNEICRUc%3D&skid=329bdc74-a2ac-4cff-8a31-fc820d18ae37&g_st=ipc" target="_blank" rel="noopener">Open Location on Map</a>
+    </section>
+
+    <!-- CARTOON GALLERY SECTION -->
+    <section class="gallery section">
+      <p class="eyebrow">OUR STORY IN ILLUSTRATIONS</p>
+      <h2>Moments Of Us</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="cartoon1.png" alt="Ahmed and Huda Cartoon Illustration 1">
+        </div>
+        <div class="gallery-item">
+          <img src="cartoon2.png" alt="Ahmed and Huda Cartoon Illustration 2">
+        </div>
+        <div class="gallery-item">
+          <img src="cartoon3.png" alt="Ahmed and Huda Cartoon Illustration 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section class="rsvp section" id="rsvp">
+      <div class="rsvp-box">
+        <p class="eyebrow">HONOR US WITH YOUR PRESENCE</p>
+        <h2>Will You Join Us?</h2>
+        <p>Please confirm your attendance below.</p>
+        <form id="rsvpForm">
+          <input id="guestName" type="text" placeholder="Your Full Name" required>
+          <select id="attendance" required>
+            <option value="">Will you attend?</option>
+            <option value="yes">Yes, I'll be honored to attend ✧</option>
+            <option value="no">Sorry, I won't be able to make it</option>
+          </select>
+          <input id="guests" type="number" min="1" max="10" value="1" placeholder="Number of guests">
+          <button class="btn btn-gold" type="submit">Confirm RSVP</button>
+        </form>
+        <p id="rsvpMessage" class="rsvp-message"></p>
+      </div>
+    </section>
+
+    <!-- WISHES SECTION -->
+    <section class="rsvp section wishes-section" id="wishes">
+      <div class="rsvp-box">
+        <p class="eyebrow">LEAVE A BLESSING</p>
+        <h2>Warm Wishes</h2>
+        <p>Write a special note for Ahmed & Huda ✧</p>
+        <form id="wishForm">
+          <input id="wishName" type="text" placeholder="Your Name" required>
+          <textarea id="wishMessage" placeholder="Your wish or message..." rows="4" required></textarea>
+          <button class="btn btn-gold" type="submit" style="margin-top:10px;">Send Wish</button>
+        </form>
+        <p id="wishStatusMessage" class="rsvp-message"></p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>With Love & Gratitude,</p>
+      <h2>Ahmed &amp; Huda</h2>
+      <small>30 • 09 • 2026</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
